@@ -53,9 +53,8 @@ Installation
      class: Application\ImportBundle\Controller\ImportController
      arguments:
          - whitelist:
-     #     importservice: [ip whitelist]
-           faz: [127.0.0.1]
-           debug: %kernel.debug%
+           faz: [127.0.0.1] 
+         debug: %kernel.debug%
          - @request
          - @response
          - faz: @?import.importer.faz.books
