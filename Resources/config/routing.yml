@@ -1,0 +1,3 @@
+import_ws:
+    pattern: /:dataType
+    defaults: { _controller: import.controller:indexAction }
